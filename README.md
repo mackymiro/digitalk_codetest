@@ -21,14 +21,15 @@ I change the condition to check for 90 minutes to <= 1.5 instead of <= 90 for cl
 Changed $time to $expiryTime to clearly indicate its purpose.
 
 In my assessment in method createOrupdate i refactor and create a method for 
-1. findOrCreateModel
-2. updateBasicInfo
-3. shouldUpdatePassword
-4. handleCustomerRole
-5. createCompanyAndDepartmentForUser
-6. handleTranslatorRole
-7. updateUserMeta
-8. updateBlacklist
-9. updateUserLanguages
+1. findOrCreateModel - Handles the logic for creating a new model or finding an existing one.
+2. updateBasicInfo - Updates the basic information of the user.
+3. shouldUpdatePassword - Determines if the password needs to be updated.
+4. handleCustomerRole -Handles the specific logic for users with the customer role
+5. createCompanyAndDepartmentForUser - Creates a company and department for the user if necessary.
+6. handleTranslatorRole - Handles the specific logic for users with the translator role.
+7. updateUserMeta - Updates the user meta information.
+8. updateBlacklist -Manages the user's blacklist.
+9. updateUserLanguages - Updates the languages associated with the user.
+    
 This refactoring separates concerns into distinct methods, making the code more modular, readable, and maintainable.
 
