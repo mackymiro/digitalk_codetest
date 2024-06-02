@@ -31,7 +31,7 @@ use Illuminate\Support\Facades\Auth;
  * Class BookingRepository
  * @package DTApi\Repository
  */
-class BookingRepository extends BaseRepository
+class BookingRepository implements BookingRepositoryInteface
 {
 
     protected $model;
